@@ -5,27 +5,21 @@ import '../scss/styles.scss'
 import * as bootstrap from 'bootstrap'
 
 //eigen js
-/*
-* Hier zie je mooi:
-•	NewsModule publiceert "NEWS" events.
-•	NewsUIModule abonneert zich op "NEWS" en rendert.
-•	Geen enkele rechtstreekse koppeling tussen de twee modules.
-*/
-// NotificationCenter (EventBus)
 
 
-// UIModule: observer
+
 const opslag = (function () {
 
     let items = [];
 
-    function bewaarMeldingen(email, pop) {
+    function bewaarMeldingen() {
 
 
 
     }
     function toonMeldingen (){
 
+        render();
     }
 
 
@@ -51,5 +45,4 @@ document
     .querySelector("#btn_notify_save")
     .addEventListener("click", () => bewaarMeldingen);
 
-// initialiseren
-NewsUIModule.init();
+
